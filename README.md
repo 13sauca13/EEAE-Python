@@ -1,5 +1,6 @@
 # Python
 Python: de 0 a E2T
+
 ---
 ## Introducción
 ### Qué es python y por qué python?

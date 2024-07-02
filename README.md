@@ -28,3 +28,4 @@ Una vez lo hayamos descargado e instalado podemos verificar que todo ha salido b
 ```shell
 python --version
 ```
+![image](https://github.com/13sauca13/Python/assets/33026257/e1699c89-29a4-4a15-ab8d-35f5b9c6c86e)

@@ -29,3 +29,12 @@ Una vez lo hayamos descargado e instalado podemos verificar que todo ha salido b
 python --version
 ```
 ![image](https://github.com/13sauca13/Python/assets/33026257/e1699c89-29a4-4a15-ab8d-35f5b9c6c86e)
+
+Como se puede ver en la foto estoy utilizando la version 3.12.4 de python. Si has llegado hasta aquí y puedes ver la versión tienes python correctamente instalado en tu máquina, enhorabuena, estás preparado para continuar y empezar a escribir código en python.
+#### La shell de Python
+Python es un lenguaje interpretado, por lo que no es necesario compilarlo. Python viene con un Python Shell (Python Interactive Shell) que se utiliza para ejecutar un único comando de Python y obtener el resultado.
+
+Python Shell espera el código python del usuario, lo interpreta y muestra el resultado en la siguiente línea. Vamos a abrir la consola de comandos para escribir:
+```shell
+python
+```

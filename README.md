@@ -12,4 +12,10 @@ Es un lenguaje de programación muy parecido al lenguaje humano y por eso es fá
 Para empezar a usar python es necesaio preparar nuestro equipo (aunque la mayoría de distribuciones de sistemas UNIX ya lo traen por defecto, incluido macOS).
 #### Instalar Python
 Lo primero es acceder a la web de [Python](https://www.python.org/) para descargar la distribución que nuestro equipo necesite en función de su sistema operativo
+
 ![Descarga python](https://github.com/13sauca13/Python/assets/33026257/f40e77f5-5e42-4675-bd6f-b48821e2dcba)
+
+Una vez lo hayamos descargado e instalado podemos verificar que todo ha salido bien y comprobar la versión que tenemos instalada accediendo a la terminal si usamos UNIX o al símbolo de sistema si usamos Windows y ejecutando el siguiente comando:
+```shell
+python --version
+```

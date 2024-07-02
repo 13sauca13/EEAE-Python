@@ -19,7 +19,7 @@ Al ejecutar el instalador es importante añadir python al PATH (El PATH es una v
 
 ![Captura de pantalla 2024-07-02 230132](https://github.com/13sauca13/Python/assets/33026257/d22fe7c8-b54d-4515-82bc-22a1c9254e90)
 
->[!NOTE]
+>[!TIP]
 >Finalizando la instalación nos saldrá un aviso sobre si queremos "Disable path length limit", esto es porque Windows tiene un límite de caracteres en la ruta de los archivos (260 caracteres) y se nos ofrece la opción de deshabilitarlo (cosa que no se podía hacer hasta 2016 y que en UNIX no ocurría)
 >
 >Puedes deshabilitarlo o no, no es relevante

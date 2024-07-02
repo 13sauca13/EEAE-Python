@@ -15,6 +15,10 @@ Lo primero es acceder a la web de [Python](https://www.python.org/) para descarg
 
 ![Descarga python](https://github.com/13sauca13/Python/assets/33026257/f40e77f5-5e42-4675-bd6f-b48821e2dcba)
 
+Al ejecutar el instalador es importante añadir python al PATH (El PATH es una variable de entorno del sistema que le indica al sistema operativo dónde buscar los ejecutables de los programas cuando los ejecutamos), de no acerlo habría que indicarle al sistema la ruta de python cada vez que queramos ejecutar algo. Usaremos la instalación completa y ya iremos viendo lo que incluye a medida que lo vayamos utilizando.
+
+![Captura de pantalla 2024-07-02 230132](https://github.com/13sauca13/Python/assets/33026257/d22fe7c8-b54d-4515-82bc-22a1c9254e90)
+
 Una vez lo hayamos descargado e instalado podemos verificar que todo ha salido bien y comprobar la versión que tenemos instalada accediendo a la terminal si usamos UNIX o al símbolo de sistema si usamos Windows y ejecutando el siguiente comando:
 ```shell
 python --version

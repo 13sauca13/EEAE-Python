@@ -40,6 +40,16 @@ Vamos a abrir la consola de comandos para escribir:
 ```shell
 python
 ```
-Al hacer esto se nos abrirá la shell de python y podremos empezar a ejecutar código.
+Al hacer esto se nos abrirá la shell de python y podremos empezar a escribir código después de ```>>>```.
 ![image](https://github.com/13sauca13/Python/assets/33026257/a0526241-ad36-4ffc-9382-b1628ab0f157)
 
+Vamos a probar a escibir algo, probemos con:
+```shell
+3 + 6
+```
+
+Funciona?
+
+Pronto veremos el lenguaje en si, por ahora es una prueba de que todo marcha como debería.
+
+Para salir de la shell de python basta con escribir ```exit()```. De este modo volveremos a la terminal del sistema.

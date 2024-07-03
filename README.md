@@ -34,7 +34,12 @@ Como se puede ver en la foto estoy utilizando la version 3.12.4 de python. Si ha
 #### La shell de Python
 Python es un lenguaje interpretado, por lo que no es necesario compilarlo. Python viene con un Python Shell (Python Interactive Shell) que se utiliza para ejecutar un único comando de Python y obtener el resultado.
 
-Python Shell espera el código python del usuario, lo interpreta y muestra el resultado en la siguiente línea. Vamos a abrir la consola de comandos para escribir:
+Python Shell espera el código python del usuario, lo interpreta y muestra el resultado en la siguiente línea.
+
+Vamos a abrir la consola de comandos para escribir:
 ```shell
 python
 ```
+Al hacer esto se nos abrirá la shell de python y podremos empezar a ejecutar código.
+![image](https://github.com/13sauca13/Python/assets/33026257/a0526241-ad36-4ffc-9382-b1628ab0f157)
+

@@ -2,6 +2,11 @@
 Python: de 0 a E2T
 
 ---
+
+:bookmark_tabs: **Índice de contenidos**
+| [Introducción]() | Qué es python y como preparar el equipo para usarlo |
+
+---
 ## Introducción
 ### Qué es python y por qué python?
 Python es un lenguaje de programación de alto nivel para programación de propósito general. Es un lenguaje de programación de código abierto, interpretado y orientado a objetos (veremos más adelante lo que es esto).

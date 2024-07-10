@@ -6,7 +6,7 @@ Python: de 0 a E2T
 | :bookmark_tabs: **Índice de contenidos** | |
 | --- | --- |
 | [Introducción](#introduccion) | Qué es python y como preparar el equipo para usarlo |
-| [Sintaxis básica](#sintaxis_basica) | Muy "self-explanatory"... sintaxis básica |
+| [Sintaxis básica](#sintáxis-básica) | Muy "self-explanatory"... sintaxis básica |
 
 ---
 ## Introducción

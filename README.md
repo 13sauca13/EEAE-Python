@@ -64,8 +64,10 @@ Durante la instalación debemos marcar la opción de agregar Code al PATH (ya vi
 
 ![image](https://github.com/13sauca13/Python/assets/33026257/9a7d923e-c082-410e-af40-9cf300c94cba)
 
-Ahora toca instalar la extensión de python. Como ya dijimos, el Visual Studio Code es un editor de texto, necesitamos una extensión para que pueda ejecutar python, pulsamos en el icono ![image](https://github.com/13sauca13/Python/assets/33026257/67645206-a6d5-49fc-a867-88c0f9a3be2b) para acceder a las extensiones o usamos el atajo ```ctrl+shift+x``` y en la barra de búsqueda ponemos "python" e instalamos la extensión con ese nombre.
+Ahora toca instalar la extensión de python. Como ya dijimos, el Visual Studio Code es un editor de texto, necesitamos una extensión para que pueda ejecutar python, pulsamos en la barra izquierda el acceso a Extensions o usamos el atajo ```Ctrl+Shift+X``` y en la barra de búsqueda ponemos "python" e instalamos la extensión con ese nombre.
 
+![image](https://github.com/13sauca13/Python/assets/33026257/b8b1a692-7d62-4388-b9b6-e6a2254f5d94)
 
+Ahora crearemos una carpeta para nuestros archivos en cualquier lugar del equipo y en el acceso de Explorer de la barra izquierda o con el atajo ```Ctrl+Shift+E``` pulsamos en "Open Folder", seleccionamos nuestra carpeta y en el aviso de seuridad decimos "Yes, I trust the authors".
 
-
+**Ahora si que ya estamos listos para empezar**

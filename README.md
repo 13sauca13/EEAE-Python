@@ -6,6 +6,7 @@ Python: de 0 a E2T
 | :bookmark_tabs: **Índice de contenidos** | |
 | --- | --- |
 | [Introducción](#introduccion) | Qué es python y como preparar el equipo para usarlo |
+| [Sintaxis básica](#sintaxis_basica) | Muy "self-explanatory"... sintaxis básica |
 
 ---
 ## Introducción
@@ -77,3 +78,6 @@ Ahora toca instalar la extensión de python. Como ya dijimos, el Visual Studio C
 Ahora crearemos una carpeta para nuestros archivos en cualquier lugar del equipo y en el acceso de Explorer de la barra izquierda o con el atajo ```Ctrl+Shift+E``` pulsamos en "Open Folder", seleccionamos nuestra carpeta y en el aviso de seuridad decimos "Yes, I trust the authors".
 
 **Ahora si que ya estamos listos para empezar**
+
+## Sintáxis básica
+bla

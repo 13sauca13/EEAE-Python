@@ -53,3 +53,12 @@ Funciona?
 Pronto veremos el lenguaje en si, por ahora es una prueba de que todo marcha como debería.
 
 Para salir de la shell de python basta con escribir ```exit()```. De este modo volveremos a la terminal del sistema.
+
+### El "Visual Studio Code"
+La shell de Python es buena para probar códigos pequeños, pero no para un proyecto grande. En un entorno de trabajo real, los desarrolladores utilizan diferentes editores de código. Nosotros usaremos Visual Studio Code, que siendo puristas es un editor de código, no un IDE, pero siendo gratuito y con todas las extensiones y la comunidad detrás es probablemente de las mejores opciones para empezar.
+
+Empezamos por descargar el programa de la web oficial de [Visual Studio Code](https://code.visualstudio.com/Download) (:warning:*OJO!! No confundir Visual Studio con Visual Studio Code... No son lo mismo*)
+![image](https://github.com/13sauca13/Python/assets/33026257/f8f1db2c-6b7e-4a63-8cda-9645d0283322)
+Durante la instalación debemos marcar la opción de agregar Code al PATH (ya vimos los motivos anteriormente), por lo demás podemos elegir lo que queramos. Una vez instalado tendremos el editor sin ninguna extensión, las iremos agregando a medida que avancemos, la primera apertura se verá así:
+![image](https://github.com/13sauca13/Python/assets/33026257/9a7d923e-c082-410e-af40-9cf300c94cba)
+

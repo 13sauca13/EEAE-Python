@@ -4,7 +4,8 @@ Python: de 0 a E2T
 ---
 
 :bookmark_tabs: **Índice de contenidos**
-| [Introducción]() | Qué es python y como preparar el equipo para usarlo |
+
+| [Introducción](#introduccion) | Qué es python y como preparar el equipo para usarlo |
 
 ---
 ## Introducción

@@ -6,7 +6,13 @@ Python: de 0 a E2T
 | :bookmark_tabs: **Índice de contenidos** | |
 | --- | --- |
 | [Introducción](#introduccion) | Qué es python y como preparar el equipo para usarlo |
-| [Sintaxis básica](#sintáxis-básica) | Muy "self-explanatory"... sintaxis básica |
+| [Fase online](#) | Muy "self-explanatory"... Los contenidos de la fase Online |
+| [Fase presencial](#) | Importar librerías |
+| | Uso de listas |
+| | Clases |
+| | Uso de diccionarios |
+| | Archivos JSON |
+| | Libreria OS |
 
 ---
 ## Introducción
@@ -79,5 +85,5 @@ Ahora crearemos una carpeta para nuestros archivos en cualquier lugar del equipo
 
 **Ahora si que ya estamos listos para empezar**
 
-## Sintáxis básica
-bla
+## Fase online
+Los contenidos de la fase online son los impartidos en el [Python Essentials 1 de Cisco](https://www.netacad.com/courses/python-essentials-1?courseLang=es-XL)

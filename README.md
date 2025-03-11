@@ -171,8 +171,6 @@ random_number = random.randint(1, 100)
 print(f"Número aleatorio entre 1 y 100: {random_number}")
 ```
 
-¡Claro! Aquí tienes un desarrollo más detallado del punto 2: **Manejo de listas**.
-
 ### 2. Manejo de listas
 
 #### Creación de listas
@@ -299,8 +297,6 @@ print("Números:", numeros)
 print("Cuadrados:", cuadrados)
 ```
 
-¡Por supuesto! Aquí tienes un desarrollo más detallado del punto 3: **Clases: Métodos (constructor, getters y setters) y Atributos**.
-
 ### 3. Clases: Métodos (constructor, getters y setters) y Atributos
 
 #### Concepto de clases y objetos
@@ -421,8 +417,6 @@ print(persona1.get_nombre())  # Output: Bob
 persona1.mostrar_informacion()  # Output: Nombre: Bob, Edad: 30, Especie: Humano
 ```
 
-¡Por supuesto! Aquí tienes un desarrollo más detallado del punto 4: **Manejo de diccionarios**.
-
 ### 4. Manejo de diccionarios
 
 #### Creación de diccionarios
@@ -542,8 +536,6 @@ print("Pares clave-valor:", persona.items())
 cuadrados = {x: x**2 for x in range(1, 6)}
 print("Cuadrados:", cuadrados)
 ```
-
-¡Por supuesto! Aquí tienes un desarrollo más detallado del punto 5: **Archivos JSON: estructura de un JSON y librería JSON**.
 
 ### 5. Archivos JSON: estructura de un JSON y librería JSON
 
@@ -670,8 +662,6 @@ with open("persona.json", "r") as archivo:
     persona_leida = json.load(archivo)
     print("Leído desde archivo:", persona_leida)
 ```
-
-¡Por supuesto! Aquí tienes un desarrollo más detallado del punto 6: **Librería OS**.
 
 ### 6. Librería OS
 

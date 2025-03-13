@@ -136,6 +136,17 @@ Python viene con una gran cantidad de librerías estándar que puedes usar sin n
   import random
   print(random.randint(1, 10))  # Output: Random integer between 1 and 10
   ```
+  
+#### Ejecución de funciones con `if __name__ == "__main__":`
+Cuando se ejecuta un script de Python, la variable especial `__name__` se establece en `"__main__"`. Esto permite que el código dentro del bloque `if __name__ == "__main__":` se ejecute solo cuando el script se ejecuta directamente, y no cuando se importa como un módulo.
+
+```python
+def main():
+    print("Esta función se ejecuta cuando el script se ejecuta directamente.")
+
+if __name__ == "__main__":
+    main()
+```
 
 #### Instalación de librerías externas
 Para utilizar librerías que no están incluidas en la instalación estándar de Python, puedes usar `pip`, el gestor de paquetes de Python. Por ejemplo, para instalar `numpy` y `pandas`:
@@ -817,4 +828,88 @@ print("Archivo 'archivo.txt' eliminado.")
 # Eliminar el directorio
 os.rmdir("directorio_renombrado")
 print("Directorio 'directorio_renombrado' eliminado.")
+```
+
+¡Claro! Aquí tienes el punto 7 añadido al esquema:
+
+### 7. Manejo de excepciones: `try - except`
+
+#### Concepto de excepciones
+Las excepciones son eventos que ocurren durante la ejecución de un programa y que interrumpen el flujo normal de las instrucciones. En Python, las excepciones se manejan utilizando bloques `try` y `except`.
+
+#### Uso de `try - except`
+El bloque `try` contiene el código que puede generar una excepción, mientras que el bloque `except` contiene el código que se ejecutará si ocurre una excepción.
+
+```python
+try:
+    # Código que puede generar una excepción
+    resultado = 10 / 0
+except ZeroDivisionError:
+    # Código que se ejecuta si ocurre una excepción de tipo ZeroDivisionError
+    print("Error: División por cero.")
+```
+
+#### Múltiples excepciones
+Puedes manejar múltiples excepciones utilizando varios bloques `except`.
+
+```python
+try:
+    # Código que puede generar una excepción
+    resultado = int("texto")
+except ZeroDivisionError:
+    print("Error: División por cero.")
+except ValueError:
+    print("Error: Valor no válido.")
+```
+
+#### Excepción genérica
+Si no sabes qué tipo de excepción puede ocurrir, puedes usar una excepción genérica.
+
+```python
+try:
+    # Código que puede generar una excepción
+    resultado = 10 / 0
+except Exception as e:
+    print(f"Error: {e}")
+```
+
+#### Bloques `else` y `finally`
+El bloque `else` se ejecuta si no ocurre ninguna excepción, y el bloque `finally` se ejecuta siempre, ocurra o no una excepción.
+
+```python
+try:
+    # Código que puede generar una excepción
+    resultado = 10 / 2
+except ZeroDivisionError:
+    print("Error: División por cero.")
+else:
+    print(f"Resultado: {resultado}")
+finally:
+    print("Este bloque se ejecuta siempre.")
+```
+
+### Ejemplo práctico
+Vamos a ver un ejemplo práctico que utiliza el manejo de excepciones para controlar errores en la entrada de datos:
+
+```python
+def dividir(a, b):
+    try:
+        resultado = a / b
+    except ZeroDivisionError:
+        print("Error: División por cero.")
+        return None
+    else:
+        return resultado
+    finally:
+        print("Operación de división completada.")
+
+# Solicitar entrada de datos al usuario
+try:
+    num1 = float(input("Introduce el primer número: "))
+    num2 = float(input("Introduce el segundo número: "))
+    resultado = dividir(num1, num2)
+    if resultado is not None:
+        print(f"Resultado: {resultado}")
+except ValueError:
+    print("Error: Entrada no válida.")
 ```

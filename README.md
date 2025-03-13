@@ -13,6 +13,7 @@ Python: de 0 a E2T
 | | Uso de diccionarios |
 | | Archivos JSON |
 | | Libreria OS |
+| | Manejo de excepciones: try - except |
 
 ---
 ## Introducción

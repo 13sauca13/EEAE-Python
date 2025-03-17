@@ -16,9 +16,9 @@ Python: de 0 a E2T
 | | Manejo de excepciones: try - except |
 
 > [!IMPORTANT]
-> :memo: [Ejercicios de repaso]()
+> :memo: [Ejercicios de repaso](https://github.com/13sauca13/Python/blob/main/Ejercicios_repaso.md)
 >
-> :brain: [Práctica avanzada 1: Tkinter]()
+> :brain: [Práctica avanzada 1: Tkinter](https://github.com/13sauca13/Python/blob/main/Practica_tkinter.md)
 ---
 ## Introducción
 ### Qué es python y por qué python?

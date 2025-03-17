@@ -15,6 +15,10 @@ Python: de 0 a E2T
 | | Libreria OS |
 | | Manejo de excepciones: try - except |
 
+> [!IMPORTANT]
+> :memo: [Ejercicios de repaso]()
+>
+> :brain: [Práctica avanzada 1: Tkinter]()
 ---
 ## Introducción
 ### Qué es python y por qué python?

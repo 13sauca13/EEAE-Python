@@ -16,9 +16,11 @@ Python: de 0 a E2T
 | | Manejo de excepciones: try - except |
 
 > [!IMPORTANT]
-> :memo: [Ejercicios de repaso](https://github.com/13sauca13/Python/blob/main/Ejercicios_repaso.md)
+> :memo: [Ejercicios de repaso](https://github.com/13sauca13/EEAE-Python/blob/main/Ejercicios_repaso.md)
 >
-> :brain: [Práctica avanzada 1: Tkinter](https://github.com/13sauca13/Python/blob/main/Practica_tkinter.md)
+> :brain: [Práctica avanzada 1: Tkinter](https://github.com/13sauca13/EEAE-Python/blob/main/Practica_tkinter.md)
+>
+> :brain:[Práctica avanzada 2: Pygame](https://github.com/13sauca13/EEAE-Python/blob/main/Practica_pygame.md)
 ---
 ## Introducción
 ### Qué es python y por qué python?

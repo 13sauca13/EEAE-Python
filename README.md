@@ -16,6 +16,9 @@ Python: de 0 a E2T
 | | Manejo de excepciones: try - except |
 
 > [!IMPORTANT]
+>
+> Los ejercicios pueden entregarse por GIT en este repositorio: [EEAE-Python2025](https://github.com/13sauca13/EEAE-Python2025) o por medio del [NCVCDEF](https://www.campusdefensa.es/mod/assign/view.php?id=211394)
+> 
 > :memo: [Ejercicios de repaso](https://github.com/13sauca13/EEAE-Python/blob/main/Ejercicios_repaso.md)
 >
 > :brain: [Práctica avanzada 1: Tkinter](https://github.com/13sauca13/EEAE-Python/blob/main/Practica_tkinter.md)

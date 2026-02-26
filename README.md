@@ -347,6 +347,11 @@ class Persona:
 ##### Getters y Setters
 Los **getters** y **setters** son métodos que permiten acceder y modificar los atributos de una clase de manera controlada.
 
+> [!NOTE]
+> En Python no es estrictamente necesario usar getters y setters (como sí lo es en otros lenguajes como Java o C#), porque los atributos de las clases son públicos por defecto y se pueden acceder directamente.
+> Pero nos pueden ser útiles para validar datos y sobre todo para entender más adelante otros lenguajes.
+
+
 ```python
 class Persona:
     def __init__(self, nombre, edad):

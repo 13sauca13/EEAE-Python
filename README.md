@@ -928,3 +928,209 @@ try:
 except ValueError:
     print("Error: Entrada no válida.")
 ```
+
+### 8. JSON y su uso
+>[NOTE]
+>JSON no es un lenguaje, es un formato de datos
+#### ¿Qué es JSON?
+JSON (JavaScript Object Notation) es un formato de texto para almacenar y transmitir datos.
+Hoy en día es el formato estándar para APIs, archivos de configuración, bases de datos web, etc.
+¿Por qué se usa tanto?
+- Es fácil de leer por humanos.
+- Es fácil de procesar por máquinas.
+- Es compatible con prácticamente todos los lenguajes de programación.
+- Es ligero y eficiente.
+
+#### Estructura básica de JSON
+Un JSON se compone de pares clave–valor.
+Se parece mucho a un diccionario de Python.
+```json
+
+{
+  "nombre": "Antonio",
+  "edad": 36,
+  "profesion": "Profesor",
+  "lenguajes": ["Python", "JavaScript"],
+  "activo": true
+}
+```
+
+#### Tipos de datos en JSON
+| Tipo JSON | Ejemplo | Equivalente en Python |
+| Cadena (string) | "Hola" | str |
+| Número | 42, 3.14 | int, float |
+| Booleano | true, false | True, False |
+| Nulo | null | None |
+| Objeto | {...} | dict |
+| Lista | [...] | list |
+
+#### JSON en Python: el módulo json
+Python incluye la librería estándar json para trabajar con este formato.
+No hace falta instalar nada.
+```python
+import json
+```
+
+#### Convertir JSON → Python (deserializar)
+El JSON que recibes de una API (por ejemplo con requests) llega como texto.
+Para convertirlo a tipos Python se usa json.loads(), así podré usarlo como un diccionario de python.
+```python
+
+import json
+
+json_texto = '{"nombre": "Ana", "edad": 20}'
+datos = json.loads(json_texto)
+
+print(datos["nombre"])  # Ana
+print(type(datos))      # dict
+```
+
+#### Convertir Python → JSON (serializar)
+Si tienes un diccionario y quieres convertirlo en JSON:
+```python
+
+import json
+
+persona = {
+    "nombre": "Luis",
+    "edad": 30,
+    "activo": True
+}
+
+json_texto = json.dumps(persona, indent=4)   #indent=4 → hace el JSON más legible.
+print(json_texto)
+```
+
+#### Leer JSON desde un fichero
+Supongamos un archivo llamado datos.json:
+```json
+
+{
+  "curso": "TCI",
+  "alumnos": 25
+}
+```
+Leerlo en Python:
+```python
+
+import json
+
+with open("datos.json", "r") as file:
+    datos = json.load(file)
+
+print(datos["curso"])  # TCI
+```
+
+#### Guardar JSON en un fichero
+```python
+import json
+
+config = {
+    "tema": "oscuro",
+    "version": 1.2
+}
+
+with open("config.json", "w", encoding="utf-8") as file:
+    json.dump(config, file, indent=4)
+```
+
+### 9. Introducción a HTTP y la librería requests en Python
+#### ¿Qué es HTTP?
+HTTP (HyperText Transfer Protocol) es el protocolo que permite que los navegadores y servidores web se comuniquen.
+Es un sistema de pregunta → respuesta:
+- Un cliente (por ejemplo, Python o un navegador) envía una solicitud a un servidor.
+- El servidor responde con información: páginas HTML, JSON, imágenes, etc.
+
+Cada solicitud HTTP tiene:
+- Una URL
+- Un método HTTP
+- Cabeceras (headers)
+- Opcionalmente un cuerpo (body)
+
+#### Métodos HTTP más importantes
+##### GET
+Solicita información.
+No envía datos sensibles en el cuerpo.
+Ejemplo: abrir una página web.
+
+##### POST
+Envía datos al servidor.
+Se usa para formularios, autenticación, enviar JSON, etc.
+
+##### PUT
+Actualiza un recurso existente.
+
+##### DELETE
+Elimina un recurso del servidor.
+
+> [TIP]
+> GET = obtener, POST = enviar, PUT = actualizar, DELETE = borrar.
+
+#### La librería requests en Python
+requests es una de las librerías más utilizadas para trabajar con HTTP porque es simple, legible y muy potente.
+Antes de usarla, debe instalarse (si aún no está):
+```python
+pip install requests
+```
+
+##### Hacer una solicitud GET
+```python
+
+import requests
+
+response = requests.get("https://api.github.com")
+
+print(response.status_code)    # Código de estado
+print(response.headers)        # Cabeceras
+print(response.text)           # Respuesta en texto
+```
+- response.status_code → por ejemplo, 200 significa que todo fue bien.
+- response.text → devuelve la respuesta como cadena de texto.
+
+##### Obtener JSON desde una API
+```python
+
+import requests
+
+url = "https://api.github.com/users/octocat"
+response = requests.get(url)
+
+data = response.json()   # Convierte JSON → diccionario
+print(data["login"])
+print(data["id"])
+```
+
+##### Enviar datos con POST
+```python
+
+import requests
+
+url = "https://httpbin.org/post"
+payload = {"usuario": "antonio", "curso": "TCI"}
+
+response = requests.post(url, data=payload)
+print(response.json())
+```
+Tambien podemos haceer POST con JSON (o diccionarios)
+```python
+
+import requests
+
+url = "https://httpbin.org/post"
+data = {"nombre": "Antonio", "rol": "Profesor"}
+
+response = requests.post(url, json=data)
+print(response.json())
+```
+
+##### Descargar archivos
+```python
+
+import requests
+
+url = "https://example.com/imagen.jpg"
+response = requests.get(url)
+
+with open("imagen.jpg", "wb") as file:
+    file.write(response.content)
+```

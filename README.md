@@ -7,7 +7,7 @@ Python: de 0 a E2T
 | --- | --- |
 | [Introducción](#introduccion) | Qué es python y como preparar el equipo para usarlo |
 | [Fase online](#fase-online) | Muy "self-explanatory"... Los contenidos de la fase Online |
-|  | Fase presencial |
+|  | Fase presencial: |
 | [1](#1-uso-e-importación-de-librerías) | Importar librerías |
 | [2](#2-manejo-de-listas) | Uso de listas |
 | [3](#3-clases-métodos-constructor-getters-y-setters-y-atributos)| Clases |

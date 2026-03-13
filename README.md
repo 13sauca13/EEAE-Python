@@ -7,15 +7,14 @@ Python: de 0 a E2T
 | --- | --- |
 | [Introducción](#introduccion) | Qué es python y como preparar el equipo para usarlo |
 | [Fase online](#fase-online) | Muy "self-explanatory"... Los contenidos de la fase Online |
-| [Fase presencial](#fase-presencial) | Importar librerías |
-| | Uso de listas |
-| | Clases |
-| | Uso de diccionarios |
-| | Archivos JSON |
-| | Libreria OS |
-| | Manejo de excepciones: try - except |
-| | JSON y su uso |
-| | Introducción a HTTP y la librería requests en Python |
+| [1](#1-uso-e-importación-de-librerías) | Importar librerías |
+| [2](#2-manejo-de-listas) | Uso de listas |
+| [3](#3-clases-métodos-constructor-getters-y-setters-y-atributos)| Clases |
+| [4](#4-manejo-de-diccionarios)| Manejo de diccionarios |
+| [5](#5-archivos-json-estructura-de-un-json-y-librería-json)| Archivos JSON |
+| [6](#6-librería-os)| Libreria OS |
+| [7](#7-manejo-de-excepciones-try---except)| Manejo de excepciones: try - except |
+| [8](#8-introducción-a-http-y-la-librería-requests-en-python)| Introducción a HTTP y la librería requests en Python |
 
 > [!IMPORTANT]
 >
@@ -566,7 +565,7 @@ print("Cuadrados:", cuadrados)
 ```
 
 ### 5. Archivos JSON: estructura de un JSON y librería JSON
-
+>JSON no es un lenguaje, es un formato de datos
 #### Estructura de un JSON
 JSON (JavaScript Object Notation) es un formato de texto ligero para el intercambio de datos. Es fácil de leer y escribir para los humanos y fácil de analizar y generar para las máquinas. La estructura de un JSON se basa en pares clave-valor y puede incluir los siguientes tipos de datos:
 
@@ -595,11 +594,22 @@ JSON (JavaScript Object Notation) es un formato de texto ligero para el intercam
     "nulo": null
   }
   ```
+#### Tipos de datos en JSON
+| Tipo JSON | Ejemplo | Equivalente en Python |
+| Cadena (string) | "Hola" | str |
+| Número | 42, 3.14 | int, float |
+| Booleano | true, false | True, False |
+| Nulo | null | None |
+| Objeto | {...} | dict |
+| Lista | [...] | list |
 
 #### Librería JSON
 Python incluye una librería estándar llamada `json` que permite trabajar con archivos JSON. Esta librería proporciona métodos para convertir datos entre JSON y Python, así como para leer y escribir archivos JSON.
+```python
+import json
+```
 
-##### Conversión de Python a JSON
+##### Conversión de Python a JSON (SERIALIZAR)
 Para convertir un objeto de Python a una cadena JSON, se utiliza el método `json.dumps()`.
 
 ```python
@@ -617,8 +627,8 @@ persona_json = json.dumps(persona)
 print(persona_json)  # Output: {"nombre": "Alice", "edad": 30, "ciudad": "Madrid"}
 ```
 
-##### Conversión de JSON a Python
-Para convertir una cadena JSON a un objeto de Python, se utiliza el método `json.loads()`.
+##### Conversión de JSON a Python (DESERIALIZAR)
+Para convertir una cadena JSON a un objeto de Python, se utiliza el método `json.loads()`, así podré usarlo como un diccionario de python.
 
 ```python
 import json
@@ -633,6 +643,10 @@ print(persona)  # Output: {'nombre': 'Alice', 'edad': 30, 'ciudad': 'Madrid'}
 
 ##### Lectura y escritura de archivos JSON
 Para leer y escribir archivos JSON, se utilizan los métodos `json.dump()` y `json.load()`.
+
+Estos son los métodos que usaremos durante el curso
+> ![WARNING]
+> OJO! los métodos `json.dump()` y `json.dumps()` NO SON LO MISMO, así como `json.load()` y `json.loads()` tampoco lo son
 
 ###### Escritura de archivos JSON
 ```python
@@ -931,112 +945,7 @@ except ValueError:
     print("Error: Entrada no válida.")
 ```
 
-### 8. JSON y su uso
->[NOTE]
->JSON no es un lenguaje, es un formato de datos
-#### ¿Qué es JSON?
-JSON (JavaScript Object Notation) es un formato de texto para almacenar y transmitir datos.
-Hoy en día es el formato estándar para APIs, archivos de configuración, bases de datos web, etc.
-¿Por qué se usa tanto?
-- Es fácil de leer por humanos.
-- Es fácil de procesar por máquinas.
-- Es compatible con prácticamente todos los lenguajes de programación.
-- Es ligero y eficiente.
-
-#### Estructura básica de JSON
-Un JSON se compone de pares clave–valor.
-Se parece mucho a un diccionario de Python.
-```json
-
-{
-  "nombre": "Antonio",
-  "edad": 36,
-  "profesion": "Profesor",
-  "lenguajes": ["Python", "JavaScript"],
-  "activo": true
-}
-```
-
-#### Tipos de datos en JSON
-| Tipo JSON | Ejemplo | Equivalente en Python |
-| Cadena (string) | "Hola" | str |
-| Número | 42, 3.14 | int, float |
-| Booleano | true, false | True, False |
-| Nulo | null | None |
-| Objeto | {...} | dict |
-| Lista | [...] | list |
-
-#### JSON en Python: el módulo json
-Python incluye la librería estándar json para trabajar con este formato.
-No hace falta instalar nada.
-```python
-import json
-```
-
-#### Convertir JSON → Python (deserializar)
-El JSON que recibes de una API (por ejemplo con requests) llega como texto.
-Para convertirlo a tipos Python se usa json.loads(), así podré usarlo como un diccionario de python.
-```python
-
-import json
-
-json_texto = '{"nombre": "Ana", "edad": 20}'
-datos = json.loads(json_texto)
-
-print(datos["nombre"])  # Ana
-print(type(datos))      # dict
-```
-
-#### Convertir Python → JSON (serializar)
-Si tienes un diccionario y quieres convertirlo en JSON:
-```python
-
-import json
-
-persona = {
-    "nombre": "Luis",
-    "edad": 30,
-    "activo": True
-}
-
-json_texto = json.dumps(persona, indent=4)   #indent=4 → hace el JSON más legible.
-print(json_texto)
-```
-
-#### Leer JSON desde un fichero
-Supongamos un archivo llamado datos.json:
-```json
-
-{
-  "curso": "TCI",
-  "alumnos": 25
-}
-```
-Leerlo en Python:
-```python
-
-import json
-
-with open("datos.json", "r") as file:
-    datos = json.load(file)
-
-print(datos["curso"])  # TCI
-```
-
-#### Guardar JSON en un fichero
-```python
-import json
-
-config = {
-    "tema": "oscuro",
-    "version": 1.2
-}
-
-with open("config.json", "w", encoding="utf-8") as file:
-    json.dump(config, file, indent=4)
-```
-
-### 9. Introducción a HTTP y la librería requests en Python
+### 8. Introducción a HTTP y la librería requests en Python
 #### ¿Qué es HTTP?
 HTTP (HyperText Transfer Protocol) es el protocolo que permite que los navegadores y servidores web se comuniquen.
 Es un sistema de pregunta → respuesta:

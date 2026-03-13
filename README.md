@@ -14,10 +14,12 @@ Python: de 0 a E2T
 | | Archivos JSON |
 | | Libreria OS |
 | | Manejo de excepciones: try - except |
+| | JSON y su uso |
+| | Introducción a HTTP y la librería requests en Python |
 
 > [!IMPORTANT]
 >
-> Los ejercicios pueden entregarse por GIT en este repositorio: [EEAE-Python2025](https://github.com/13sauca13/EEAE-Python2025) o por medio del [NCVCDEF](https://www.campusdefensa.es/mod/assign/view.php?id=211394)
+> Los ejercicios pueden entregarse por GIT en este repositorio: [EEAE-Python2026](https://github.com/13sauca13/EEAE-Python2026) o por medio del [NCVCDEF](https://www.campusdefensa.es/course/view.php?id=3769)
 > 
 > :memo: [Ejercicios de repaso](https://github.com/13sauca13/EEAE-Python/blob/main/Ejercicios_repaso.md)
 >
